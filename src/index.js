@@ -20,12 +20,18 @@ const theme = {
   grayAccent: '#f3f3f3',
   yellowAccent: '#eeff41',
   darkGray: '#666',
+  surface: '#fafafa',
   tinyFont: '1.2rem',
   smallFont: '1.5rem',
   mediumFont: '1.8rem',
   largeFont: '2.2rem',
   hugeFont: '3.0rem',
-  headerSize: '6.0rem'
+  headerSize: '6.0rem',
+
+  bodyText:
+    "'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;",
+  titleText:
+    "'Nova Mono', source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;"
 };
 
 ReactDOM.render(
