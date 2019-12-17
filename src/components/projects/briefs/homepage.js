@@ -1,4 +1,4 @@
-import { testy } from './assets';
+import { testy, voluntierDemo } from './assets';
 
 export const projects = [
   {
@@ -6,7 +6,7 @@ export const projects = [
     description:
       'Designed, developed, tested, and shipped a functional website in 6 weeks.',
     tags: 'UX Design, User Research, Frontend Engineering',
-    image: testy
+    image: voluntierDemo
   },
   {
     title: 'Python Quest',

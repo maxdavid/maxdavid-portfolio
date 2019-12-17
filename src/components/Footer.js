@@ -5,8 +5,8 @@ import { device } from '../styles/deviceBreakpoints';
 export const Footer = () => {
   return (
     <StyledFooter className='mono horz-flow'>
-      <span>copyright max david 2019 // hit me up:</span>
-      <a href='mailto:me@maxdavid.com'>me@maxdavid.com</a>
+      <span>copyright max david 2019 // looking for the old site?</span>
+      <a href='http://old.maxdavid.com'>it's still around</a>
     </StyledFooter>
   );
 };
