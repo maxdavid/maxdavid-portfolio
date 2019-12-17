@@ -33,18 +33,18 @@ const StyledNavbar = styled.div`
   align-items: center;
   flex: 1 auto 1;
 
-  font-family: ${props => props.theme.titleText};
+  font-family: ${props => props.theme.navText};
   font-size: ${props => props.theme.mediumFont};
 
   z-index: 9000;
 
-  /* @media ${device.laptop} {
+  @media ${device.laptop} {
     background-color: ${props => props.theme.surface};
 
     -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
-  } */
+  }
 
   @media ${device.tablet} {
     height: 40px;

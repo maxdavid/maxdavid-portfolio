@@ -17,7 +17,86 @@ body {
   color: #1a1a1a;
 }
 
-code {
-  font-family: 'Nova Mono', source-code-pro, Menlo, Monaco, Consolas,
+code,
+.mono {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  cursor: pointer;
+  color: inherit;
+  transition: background-color 0.2s ease-in-out;
+}
+
+a:hover {
+  background-color: #eeff41;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.flow > * + * {
+  margin-top: 1em;
+}
+
+.horz-flow > * + * {
+  margin-left: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0.81em;
+  margin-bottom: 0.5em;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Roboto Mono', source-code-pro, Menlo, Monaco, Consolas,
     'Courier New', monospace;
+}
+
+h1 {
+  font-size: 6rem;
+  line-height: 1.23;
+}
+
+h2 {
+  font-size: 4.6rem;
+  line-height: 1.35;
+}
+
+h3 {
+  /* tags */
+  font-size: 1.3rem;
+  line-height: 1.35;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-size-adjust: 100%;
+}
+
+h4 {
+  font-size: 2.7rem;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.subtitle {
+  font-size: 1.6rem;
+  font-style: italic;
+  opacity: 0.7;
 }

@@ -21,6 +21,9 @@ const theme = {
   yellowAccent: '#eeff41',
   darkGray: '#666',
   surface: '#fafafa',
+
+  homeWidth: '750px',
+
   tinyFont: '1.2rem',
   smallFont: '1.5rem',
   mediumFont: '1.8rem',
@@ -30,8 +33,10 @@ const theme = {
 
   bodyText:
     "'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;",
+  navText:
+    "'Nova Mono', source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;",
   titleText:
-    "'Nova Mono', source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;"
+    "'Roboto Mono', source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;"
 };
 
 ReactDOM.render(
