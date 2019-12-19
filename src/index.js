@@ -22,7 +22,13 @@ const theme = {
   darkGray: '#666',
   surface: '#fafafa',
 
-  homeWidth: '750px',
+  homeWidth: '950px',
+  maxProjectWidth: '850px',
+  projectTextWidth: '600px',
+  projectHeaderWidth: '700px',
+  navbarHeightDesktop: '64px',
+  navbarHeightTablet: '40px',
+  footerHeight: '32px',
 
   tinyFont: '1.2rem',
   smallFont: '1.5rem',

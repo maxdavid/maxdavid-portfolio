@@ -2,20 +2,21 @@ import React from 'react';
 import styled from 'styled-components';
 import { device } from '../styles/deviceBreakpoints';
 
-export const Footer = () => {
+export const Footer = props => {
   return (
-    <StyledFooter className='mono horz-flow'>
-      <span>copyright max david 2019 // looking for the old site?</span>
+    <StyledFooter fixed={props.fixed} className='mono horz-flow'>
+      <span>max david 2019 // looking for the old site?</span>
       <a href='http://old.maxdavid.com'>it's still around</a>
     </StyledFooter>
   );
 };
 
 const StyledFooter = styled.div`
-  position: fixed;
+  position: ${({ fixed }) => (fixed ? 'fixed' : 'static')};
+  padding-top: ${({ fixed }) => (fixed ? 0 : '32px')};
+  height: ${({ theme, fixed }) => (fixed ? theme.footerHeight : '64px')};
   bottom: 0;
   width: 100%;
-  height: 32px;
   text-align: center;
 
   display: flex;

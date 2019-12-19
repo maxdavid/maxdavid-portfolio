@@ -1,20 +1,35 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const ProjectLink = props => {
   return (
     <StyledProjectLink>
       <ProjectImage>
-        <img src={props.image} alt='wat' />
+        {props.route ? (
+          <Link to={props.route}>
+            <img src={props.image} alt={props.imageAlt} />
+          </Link>
+        ) : (
+          <img src={props.image} alt={props.imageAlt} />
+        )}
       </ProjectImage>
       <ProjectText className='flow'>
         <h2>
-          <a>{props.title}</a>
+          {props.route ? (
+            <Link to={props.route}>{props.title}</Link>
+          ) : (
+            props.title
+          )}
         </h2>
         <h3>{props.tags}</h3>
         <h4>{props.description}</h4>
-        <h6 className='mono'>
-          <a>VIEW MORE -></a>
+        <h6>
+          {props.route ? (
+            <Link to={props.route}>View More -></Link>
+          ) : (
+            'Write-up Coming Soon ...'
+          )}
         </h6>
       </ProjectText>
     </StyledProjectLink>
@@ -30,6 +45,10 @@ const StyledProjectLink = styled.div`
   display: grid;
   grid-template-columns: 4fr 5fr;
   align-items: center;
+
+  a {
+    text-decoration: none;
+  }
 `;
 
 const ProjectImage = styled.div`
@@ -37,6 +56,11 @@ const ProjectImage = styled.div`
 
   img {
     object-fit: contain;
+    transition: opacity 0.2s ease-in-out;
+  }
+  a:hover > img {
+    opacity: 0.8;
+    transition: opacity 0.2s ease-in-out;
   }
 `;
 

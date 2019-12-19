@@ -25,7 +25,7 @@ const StyledNavbar = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  height: 64px;
+  height: ${({ theme }) => theme.navbarHeightDesktop};
   padding: 0 64px;
 
   display: flex;
@@ -47,7 +47,7 @@ const StyledNavbar = styled.div`
   }
 
   @media ${device.tablet} {
-    height: 40px;
+    height: ${({ theme }) => theme.navbarHeightTablet};
     padding: 0 16px;
   }
 `;
