@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
+import { ScrollToTop } from './util';
 
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import * as reset from './styles/reset.css';
@@ -50,6 +51,7 @@ ReactDOM.render(
     <GlobalStyle />
     <Router>
       <StateProvider initialState={initialState} reducer={rootReducer}>
+        <ScrollToTop />
         <App />
       </StateProvider>
     </Router>

@@ -12,7 +12,7 @@ export const Navbar = () => {
       </StyledNavlinks>
       <div />
       <StyledNavlinks>
-        <a className='nav-resume-link' href='/cv/maxdavid-resume.pdf'>
+        <a className='nav-resume-link' href='cv/max-david-resume.pdf'>
           Resume
         </a>
       </StyledNavlinks>

@@ -3,10 +3,13 @@ import { device } from '../styles/deviceBreakpoints';
 
 export const StyledProjectOutline = styled.article`
   width: 100%;
-  max-width: ${({ theme }) => theme.maxProjectWidth};
   margin: 0 auto;
   font-size: 1.8rem;
   font-weight: 300;
+
+  .content {
+    max-width: ${({ theme }) => theme.maxProjectWidth};
+  }
 
   * {
     max-width: ${({ theme }) => theme.projectTextWidth};
@@ -33,6 +36,12 @@ export const StyledProjectOutline = styled.article`
 
   .header {
     max-width: ${({ theme }) => theme.projectHeaderWidth};
+  }
+
+  .hero {
+    width: 100%;
+    /* max-width: ${({ theme }) => theme.maxProjectWidth}; */
+    max-width: 1000px;
   }
 
   h3 {
@@ -89,4 +98,10 @@ export const StyledProjectOutline = styled.article`
       margin-left: 2em;
     }
   }
+
+  .hero .grid-row {
+    width: 100%;
+    max-width: 1000px;
+  }
+
 `;

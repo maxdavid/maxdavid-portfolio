@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { device } from './styles/deviceBreakpoints';
 import { Switch, Route } from 'react-router';
-import { Footer, Navbar } from './components';
+import { Navbar } from './components';
 import { Home, VoluntierOutline } from './views';
 
 function App() {
