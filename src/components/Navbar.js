@@ -1,14 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 import { device } from '../styles/deviceBreakpoints';
 
 export const Navbar = () => {
   return (
     <StyledNavbar>
       <StyledNavlinks>
-        <a className='nav-home-link' href='/'>
+        <NavLink className='nav-home-link' to='/'>
           Max David
-        </a>
+        </NavLink>
       </StyledNavlinks>
       <div />
       <StyledNavlinks>
