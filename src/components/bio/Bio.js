@@ -35,6 +35,7 @@ const StyledBio = styled.div`
   align-items: center;
 
   @media ${device.tablet} {
+    grid-template-columns: 1fr;
     text-align: center;
   }
 `;
