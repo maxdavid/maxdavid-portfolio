@@ -1,3 +1,7 @@
 import maxHeadshot from './maxHeadshot.jpg';
 
-export { maxHeadshot };
+/* Shape SVGs */
+import boomerang from './boomerang.svg';
+import squiggly from './squiggly.svg';
+
+export { maxHeadshot, boomerang, squiggly };

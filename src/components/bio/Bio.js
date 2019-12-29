@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import { device } from '../../styles/deviceBreakpoints';
+
+import FunShapes from './FunShapes';
 import { maxHeadshot } from './assets';
 
 export const Bio = props => {
@@ -18,6 +21,7 @@ export const Bio = props => {
       <BioImage>
         <img src={maxHeadshot} alt='headshot of Max David' />
       </BioImage>
+      <FunShapes />
     </StyledBio>
   );
 };
@@ -29,6 +33,10 @@ const StyledBio = styled.div`
   display: grid;
   grid-template-columns: 6fr 4fr;
   align-items: center;
+
+  @media ${device.tablet} {
+    text-align: center;
+  }
 `;
 
 const BioName = styled.h2`
@@ -43,6 +51,10 @@ const BioImage = styled.div`
 
   img {
     object-fit: contain;
+  }
+
+  @media ${device.tablet} {
+    display: none;
   }
 `;
 
