@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { device } from '../styles/deviceBreakpoints';
 import { Link } from 'react-router-dom';
 
 export const ProjectLink = props => {
@@ -46,6 +47,12 @@ const StyledProjectLink = styled.div`
   grid-template-columns: 4fr 5fr;
   align-items: center;
 
+  @media ${device.tablet} {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
   a {
     text-decoration: none;
   }
@@ -57,6 +64,11 @@ const ProjectImage = styled.div`
   img {
     object-fit: contain;
     transition: opacity 0.2s ease-in-out;
+
+    @media ${device.tablet} {
+      max-height: 40vh;
+      margin: 0 auto;
+    }
   }
   a:hover > img {
     opacity: 0.8;
