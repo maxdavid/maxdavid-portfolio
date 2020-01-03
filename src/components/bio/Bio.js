@@ -11,11 +11,12 @@ export const Bio = props => {
       <BioText className='flow'>
         <BioName>Max David</BioName>
         <h4>
-          UX Engineer student approaching design from a technical standpoint.
+          UX Engineer student approaching design from a technical angle and a
+          hospitality mindset.
         </h4>
         <div className='subtitle'>Currently located in San Francisco.</div>
         <BioContact className='mono'>
-          <a href='mailto:me@maxdavid.com'>get in contact</a>
+          <a href='mailto:me@maxdavid.com'>✎ get in contact</a>
         </BioContact>
         <BioLinksContainer>
           <BioLink
@@ -105,7 +106,7 @@ const BioLink = styled.a`
     height: 100%;
     content: '>';
     font-size: 40px;
-    padding: 0 10px;
+    padding: 10px 10px 0 10px;
     border-right: 5px solid ${({ theme }) => theme.yellowAccent};
     position: absolute;
     top: 0;
@@ -151,6 +152,14 @@ const BioImage = styled.div`
 const BioText = styled.div`
   width: 100%;
   padding: 0 32px 32px 0;
+
+  h4 {
+    font-size: 3.2rem;
+
+    @media ${device.tablet} {
+      font-size: 2.7rem;
+    }
+  }
 `;
 
 const BioContact = styled.h5``;
