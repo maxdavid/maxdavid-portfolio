@@ -37,6 +37,7 @@ const GlobalStyle = createGlobalStyle`
 const theme = {
   grayAccent: '#f3f3f3',
   yellowAccent: '#eeff41',
+  coralAccent: 'rgba(255, 128, 82, 0.18)',
   darkGray: '#666',
   surface: '#fafafa',
 
