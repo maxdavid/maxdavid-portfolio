@@ -1,8 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import {
   Footer,
-  ProjectList,
   Bio,
   LargeCardList,
   SmallCardList,
@@ -10,6 +9,10 @@ import {
 } from '../components';
 
 export const Home = () => {
+  useEffect(() => {
+    document.title = 'Max David';
+  }, []);
+
   return (
     <div>
       <HomeContainer>
