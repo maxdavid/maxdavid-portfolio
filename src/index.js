@@ -38,6 +38,8 @@ const theme = {
   grayAccent: '#f3f3f3',
   yellowAccent: '#eeff41',
   coralAccent: 'rgba(255, 128, 82, 0.18)',
+  turquoiseAccent: 'rgba(100, 209, 212, 0.24)',
+  blueAccent: 'rgba(83, 210, 249, 0.24)',
   darkGray: '#666',
   surface: '#fafafa',
 
@@ -61,6 +63,8 @@ const theme = {
   navText:
     "'Nova Mono', source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;",
   titleText:
+    "'Roboto Mono', source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;",
+  mono:
     "'Roboto Mono', source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;"
 };
 

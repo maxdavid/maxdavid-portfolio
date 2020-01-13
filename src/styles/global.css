@@ -19,8 +19,8 @@ body {
 
 code,
 .mono {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Roboto Mono', source-code-pro, Menlo, Monaco, Consolas,
+    'Courier New', monospace;
 }
 
 a {

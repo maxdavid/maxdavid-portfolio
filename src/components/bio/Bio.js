@@ -119,6 +119,8 @@ const StyledBio = styled.div`
   width: 100%;
   height: 90vh;
 
+  margin-bottom: 20vh;
+
   display: grid;
   grid-template-columns: 6fr 4fr;
   align-items: center;

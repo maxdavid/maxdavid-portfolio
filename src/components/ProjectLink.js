@@ -18,9 +18,9 @@ export const ProjectLink = props => {
       <ProjectText className='flow'>
         <h2>
           {props.route ? (
-            <Link to={props.route}>{props.title}</Link>
+            <Link to={props.route}>{props.projectTitle}</Link>
           ) : (
-            props.title
+            props.projectTitle
           )}
         </h2>
         <h3>{props.tags}</h3>
