@@ -6,6 +6,7 @@ export const BlockLink = props => {
     <StyledBlockLink
       href={props.href}
       title={props.title}
+      description={props.description}
       rel='noopener noreferred'
       target='_blank'
     >
@@ -72,7 +73,8 @@ export const StyledBlockLink = styled.a`
     height: 100%;
     content: '>';
     font-size: 40px;
-    padding: 10px 10px 0 10px;
+    padding: ${({ description }) =>
+      description ? '10px 10px 0 10px' : '0 10px'};
     border-right: 5px solid ${({ theme }) => theme.yellowAccent};
     position: absolute;
     top: 0;

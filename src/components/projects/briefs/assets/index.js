@@ -7,6 +7,7 @@ import soupDemo from './soupDemo.png';
 import thankYouDemo from './thankYouDemo.gif';
 import shrekDemo from './shrekDemo.gif';
 import webstaurantDemo from './webstaurantDemo.gif';
+import treasureClientDemo from './treasureClientDemo.png';
 
 export {
   testy,
@@ -17,5 +18,6 @@ export {
   soupDemo,
   thankYouDemo,
   shrekDemo,
-  webstaurantDemo
+  webstaurantDemo,
+  treasureClientDemo
 };

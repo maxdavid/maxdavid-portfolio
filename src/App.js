@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { device } from './styles/deviceBreakpoints';
 import { Switch, Route } from 'react-router';
 import { Navbar } from './components';
-import { Home, VoluntierOutline } from './views';
+import { Home, VoluntierOutline, ThankYouOutline } from './views';
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
         <Switch>
           <Route exact path={'/'} component={Home} />
           <Route exact path={'/voluntier'} component={VoluntierOutline} />
+          <Route exact path={'/thank-you'} component={ThankYouOutline} />
         </Switch>
       </ContentContainer>
       {/* <Footer fixed /> */}

@@ -42,6 +42,7 @@ const theme = {
   blueAccent: 'rgba(83, 210, 249, 0.24)',
   darkGray: '#666',
   surface: '#fafafa',
+  cardBoxShadow: '2px 3px 10px 0px rgba(0, 0, 0, 0.12)',
 
   homeWidth: '950px',
   maxProjectWidth: '850px',

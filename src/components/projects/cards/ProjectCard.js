@@ -1,21 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
 import { device } from '../../../styles/deviceBreakpoints';
-import { Link } from 'react-router-dom';
+import { Link } from '../../../util';
 
 export const ProjectCard = props => {
-  return props.route ? (
-    <Link to={props.route}>
-      <ProjectCardContent {...props} />
-    </Link>
-  ) : (
-    <ProjectCardContent {...props} />
+  return (
+    <div style={{ height: props.size === 'large' ? 550 : 450 }}>
+      {props.route ? (
+        <Link to={props.route}>
+          <ProjectCardContent {...props} />
+        </Link>
+      ) : (
+        <ProjectCardContent {...props} />
+      )}
+    </div>
   );
 };
 
 const ProjectCardContent = props => {
   return (
-    <StyledCard size={props.size} comingSoon={props.comingSoon}>
+    <StyledCard size={props.size} comingSoon={Boolean(!props.route)}>
       <ProjectImage cover={props.imageCover}>
         <img src={props.image} alt={props.imageAlt} />
       </ProjectImage>
@@ -32,10 +36,17 @@ const ProjectCardContent = props => {
         )}
         <div className='description'>{props.description}</div>
       </ProjectText>
-      {props.comingSoon ? (
+      {!props.route ? (
         <ComingSoon>
           <span>COMING SOON...</span>
         </ComingSoon>
+      ) : (
+        ''
+      )}
+      {/^https?:\/\//.test(props.route) && props.size !== 'large' ? (
+        <PendingWriteup>
+          <div>Write-up Pending</div>
+        </PendingWriteup>
       ) : (
         ''
       )}
@@ -65,6 +76,19 @@ const ComingSoon = styled.div`
   span {
     background-color: ${({ theme }) => theme.yellowAccent};
   }
+`;
+
+const PendingWriteup = styled.div`
+  width: 100%;
+  font-family: ${({ theme }) => theme.mono};
+  text-transform: uppercase;
+  text-align: center;
+  background-color: ${({ theme }) => theme.turquoiseAccent};
+  margin-bottom: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const ProjectTags = styled.div`
@@ -122,13 +146,18 @@ const ProjectText = styled.div`
 
   .description {
     font-size: var(--desc-size);
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
   }
 `;
 
 const StyledCard = styled.div`
   /* Card are assumed small unless specified */
   --grid-gap: ${({ size }) => (size === 'large' ? '1em' : '0.5em')};
-  --height: ${({ size }) => (size === 'large' ? '550px' : '450px')};
+  --height: ${({ size }) => (size === 'large' ? '550px' : '500px')};
   --card-padding: ${({ size }) => (size === 'large' ? '16px' : '0px')};
 
   position: relative;
@@ -137,15 +166,15 @@ const StyledCard = styled.div`
   transition: all 0.25s ease;
   border-radius: 10px;
 
-  -webkit-box-shadow: 2px 3px 10px 0px rgba(0, 0, 0, 0.12);
-  -moz-box-shadow: 2px 3px 10px 0px rgba(0, 0, 0, 0.12);
-  box-shadow: 2px 3px 10px 0px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: ${({ theme }) => theme.cardBoxShadow};
+  -moz-box-shadow: ${({ theme }) => theme.cardBoxShadow};
+  box-shadow: ${({ theme }) => theme.cardBoxShadow};
 
   cursor: pointer;
 
   display: grid;
   column-gap: var(--grid-gap);
-  grid-template-rows: 60% 40%;
+  grid-template-rows: 60% 36% 4%;
 
   width: 100%;
   height: var(--height);

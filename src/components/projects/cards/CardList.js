@@ -45,5 +45,5 @@ const StyledSmallCardList = styled(StyledCardList)`
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 1em;
   row-gap: 3em;
-  min-height: 90vh;
+  min-height: 135vh;
 `;
