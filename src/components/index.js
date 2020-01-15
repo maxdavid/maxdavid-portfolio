@@ -4,3 +4,4 @@ export * from './Footer';
 export * from './bio';
 export * from './projects';
 export * from './BlockLink';
+export * from './funshapes';

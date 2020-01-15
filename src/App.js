@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { device } from './styles/deviceBreakpoints';
 import { Switch, Route } from 'react-router';
-import { Navbar } from './components';
+import { Navbar, FunShapes } from './components';
 import { Home, VoluntierOutline, ThankYouOutline } from './views';
 
 function App() {
@@ -16,6 +16,7 @@ function App() {
           <Route exact path={'/thank-you'} component={ThankYouOutline} />
         </Switch>
       </ContentContainer>
+      <FunShapes />
       {/* <Footer fixed /> */}
     </div>
   );

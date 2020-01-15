@@ -3,19 +3,19 @@ import styled from 'styled-components';
 import { device } from '../../styles/deviceBreakpoints';
 import { boomerang, squiggly } from './assets';
 
-const FunShapes = () => {
+export const FunShapes = () => {
   return (
     <ShapeContainer>
       <BlueCircle />
       <RedSquare />
       <PurpleTriangle />
       <GreenSquiggly />
-      <OrangeSteps rotation='30deg'>
+      <OrangeSteps rotation='30deg' top='188%'>
         <span />
         <span />
         <span />
       </OrangeSteps>
-      <OrangeSteps rotation='55deg' top='85%' left='10%' delay='0.3s'>
+      <OrangeSteps rotation='55deg' top='191%' left='10%' delay='0.3s'>
         <span />
         <span />
         <span />
@@ -27,7 +27,7 @@ const FunShapes = () => {
 const ShapeContainer = styled.div`
   position: absolute;
   z-index: -9000;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   top: 50%;
   left: 50%;
@@ -128,7 +128,7 @@ const GreenSquiggly = styled.span`
   -webkit-mask: url(${squiggly}) repeat-y top left;
   height: 302px;
   width: 80px;
-  bottom: -10%;
+  bottom: -80%;
   right: 6%;
 `;
 

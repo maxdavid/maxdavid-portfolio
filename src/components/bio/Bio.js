@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { device } from '../../styles/deviceBreakpoints';
 
-import FunShapes from './FunShapes';
 import { BlockLink, StyledBlockLinksContainer } from '../BlockLink';
 import { maxHeadshot, maxHeadshotSquare } from './assets';
 
@@ -35,7 +34,6 @@ export const Bio = props => {
       <BioImage>
         <img src={maxHeadshotSquare} alt='headshot of Max David' />
       </BioImage>
-      <FunShapes />
     </StyledBio>
   );
 };
