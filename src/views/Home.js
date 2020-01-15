@@ -5,7 +5,8 @@ import {
   Bio,
   LargeCardList,
   SmallCardList,
-  projects
+  projects,
+  FunShapes
 } from '../components';
 
 export const Home = () => {
@@ -24,6 +25,7 @@ export const Home = () => {
           cards={projects.filter(project => project.size !== 'large')}
         />
       </HomeContainer>
+      <FunShapes />
       <Footer fixed />
     </div>
   );

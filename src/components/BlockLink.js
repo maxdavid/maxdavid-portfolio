@@ -45,6 +45,10 @@ export const StyledBlockLink = styled.a`
   justify-content: space-between;
   align-items: center;
 
+  -webkit-box-shadow: ${({ theme }) => theme.cardBoxShadow};
+  -moz-box-shadow: ${({ theme }) => theme.cardBoxShadow};
+  box-shadow: ${({ theme }) => theme.cardBoxShadow};
+
   .container {
     padding: 10px;
   }
