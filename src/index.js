@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router } from 'react-router-dom';
+import { Route, Router } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
-import { ScrollToTop } from './util';
+import { ScrollToTop, withTracker } from './util';
 
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import * as reset from './styles/reset.css';
@@ -13,21 +13,7 @@ import { initialState } from './reducers/initialState';
 import { rootReducer } from './reducers/rootReducer';
 import App from './App';
 
-import ReactGA from 'react-ga';
-const trackingId = 'UA-45189020-1';
-
-// Initialize google analytics page view tracking
-ReactGA.initialize(trackingId, {
-  gaOptions: { siteSpeedSampleRate: 100 }
-});
 const history = createBrowserHistory();
-history.listen(location => {
-  ReactGA.set({ page: location.pathname }); // Update the user's current page
-  ReactGA.pageview(location.pathname); // Record a pageview for the given page
-});
-
-ReactGA.set({ page: '/' });
-ReactGA.pageview('/');
 
 const GlobalStyle = createGlobalStyle`
     ${reset} 
@@ -75,7 +61,11 @@ ReactDOM.render(
     <Router history={history}>
       <StateProvider initialState={initialState} reducer={rootReducer}>
         <ScrollToTop />
-        <App />
+        <Route
+          component={withTracker(App, {
+            /* additional attributes */
+          })}
+        />
       </StateProvider>
     </Router>
   </ThemeProvider>,
