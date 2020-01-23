@@ -39,11 +39,12 @@ const StyledLargeCardList = styled(StyledCardList)`
   grid-template-columns: 1fr 1fr;
   column-gap: 1em;
   height: 90vh;
+  min-height: 600px;
 `;
 
 const StyledSmallCardList = styled(StyledCardList)`
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 1em;
   row-gap: 3em;
-  min-height: 135vh;
+  min-height: 1024px;
 `;

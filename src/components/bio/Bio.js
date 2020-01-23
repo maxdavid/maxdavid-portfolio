@@ -41,6 +41,7 @@ export const Bio = props => {
 const StyledBio = styled.div`
   width: 100%;
   height: 90vh;
+  min-height: 450px;
 
   margin-bottom: 20vh;
 
