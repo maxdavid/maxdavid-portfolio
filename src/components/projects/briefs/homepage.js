@@ -8,7 +8,8 @@ import {
   thankYouDemo,
   shrekDemo,
   webstaurantDemo,
-  treasureClientDemo
+  treasureClientDemo,
+  foodreauDemo
 } from './assets';
 
 export const projects = [
@@ -83,6 +84,16 @@ export const projects = [
     image: treasureClientDemo,
     imageAlt: 'snippet of the treasure client UI showing player info',
     route: 'https://github.com/maxdavid/react-treasure-hunt',
+    size: 'small',
+    imageCover: true
+  },
+  {
+    projectTitle: 'Foodreau Sketch Plugin',
+    description: 'Sketch plugin for populating designs with real food recipes.',
+    tags: ['Sketch', 'Plugin', 'JavaScript', 'UX'],
+    image: foodreauDemo,
+    imageAlt: 'demo of using foodreau in sketch',
+    route: '/foodreau',
     size: 'small',
     imageCover: true
   }

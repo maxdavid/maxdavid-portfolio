@@ -4,6 +4,7 @@ import { device } from '../../../styles/deviceBreakpoints';
 export const StyledProjectOutline = styled.article`
   width: 100%;
   margin: 0 auto;
+  padding: 8px 8px 64px 8px;
   font-size: 1.8rem;
   font-weight: 300;
 
@@ -97,11 +98,22 @@ export const StyledProjectOutline = styled.article`
     * {
       margin: 0;
     }
+
+    &.single-link {
+      grid-template-columns: 300px;
+      width: 300px;
+      margin: auto;
+    }
   }
+
 
   .centered {
     width: 100%;
     text-align: center;
+  }
+
+  .rounded {
+    border-radius: 12px;
   }
 
   .grid-row {
