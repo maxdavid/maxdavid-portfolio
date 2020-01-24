@@ -226,7 +226,7 @@ export const VoluntierOutline = () => {
               <h6>Volunteer User Key Features</h6>
               <ul>
                 <li>Search locally for volunteer opportunities</li>
-                <li>Filter opportunities by category or requirements</li>
+                <li>Filter opportunities by category, requirements</li>
                 <li>Join friends and sign up as a group</li>
                 <li>Log hours volunteered for later verification</li>
               </ul>

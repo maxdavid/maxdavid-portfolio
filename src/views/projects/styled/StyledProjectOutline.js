@@ -6,7 +6,7 @@ export const StyledProjectOutline = styled.article`
   margin: 0 auto;
   padding: 8px 8px 64px 8px;
   font-size: 1.8rem;
-  font-weight: 300;
+  font-weight: 400;
 
   .content {
     max-width: ${({ theme }) => theme.maxProjectWidth};
@@ -61,6 +61,7 @@ export const StyledProjectOutline = styled.article`
 
   h6 {
     margin-top: 2em;
+    font-size: 1.4rem;
   }
 
   figure {
