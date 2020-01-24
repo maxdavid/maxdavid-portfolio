@@ -30,7 +30,7 @@ export const FoodreauOutline = () => {
         <div className='content'>
           <div className='project-links single-link'>
             <BlockLink
-              href='https://github.com/maxdavid/thank-you'
+              href='https://github.com/maxdavid/sketch-foodreau'
               title='Code on GitHub'
               description='Docs &amp; Advanced Usage'
             />
