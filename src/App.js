@@ -7,7 +7,8 @@ import {
   Home,
   VoluntierOutline,
   ThankYouOutline,
-  FoodreauOutline
+  FoodreauOutline,
+  CityTempOutline
 } from './views';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route exact path={'/voluntier'} component={VoluntierOutline} />
           <Route exact path={'/thank-you'} component={ThankYouOutline} />
           <Route exact path={'/foodreau'} component={FoodreauOutline} />
+          <Route exact path={'/citytemp'} component={CityTempOutline} />
         </Switch>
       </ContentContainer>
       {/* <Footer fixed /> */}

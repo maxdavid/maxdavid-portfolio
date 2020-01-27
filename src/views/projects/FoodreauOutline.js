@@ -15,7 +15,7 @@ export const FoodreauOutline = () => {
   return (
     <div>
       <StyledProjectOutline>
-        <figure>
+        <figure className='hero'>
           <img
             className='rounded'
             src={foodreauIconWide}
