@@ -45,7 +45,7 @@ const ProjectCardContent = props => {
       )}
       {/^https?:\/\//.test(props.route) && props.size !== 'large' ? (
         <PendingWriteup>
-          <div>Write-up Pending</div>
+          <div>GitHub Link</div>
         </PendingWriteup>
       ) : (
         ''
