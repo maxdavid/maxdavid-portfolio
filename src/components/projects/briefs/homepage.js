@@ -11,7 +11,8 @@ import {
   treasureClientDemo,
   foodreauDemo,
   citytempDemo,
-  dotfilesDemo
+  dotfilesDemo,
+  gitsnapDemo
 } from './assets';
 
 export const projects = [
@@ -79,6 +80,16 @@ export const projects = [
     imageCover: true
   },
   {
+    projectTitle: 'Foodreau Sketch Plugin',
+    description: 'Sketch plugin for populating designs with real food recipes.',
+    tags: ['Sketch', 'Plugin', 'JavaScript', 'UX'],
+    image: foodreauDemo,
+    imageAlt: 'demo of using foodreau in sketch',
+    route: '/foodreau',
+    size: 'small',
+    imageCover: true
+  },
+  {
     projectTitle: 'Python Quest',
     description:
       'A Multi-User Dungeon (MUD) made in 4 days using React, Hooks, and Django.',
@@ -91,16 +102,6 @@ export const projects = [
     imageCover: true
   },
   {
-    projectTitle: 'Foodreau Sketch Plugin',
-    description: 'Sketch plugin for populating designs with real food recipes.',
-    tags: ['Sketch', 'Plugin', 'JavaScript', 'UX'],
-    image: foodreauDemo,
-    imageAlt: 'demo of using foodreau in sketch',
-    route: '/foodreau',
-    size: 'small',
-    imageCover: true
-  },
-  {
     projectTitle: 'Treasure Client',
     description:
       'Comprehensive React client for the Lambda treasure hunt made from scratch in four days.',
@@ -108,6 +109,16 @@ export const projects = [
     image: treasureClientDemo,
     imageAlt: 'snippet of the treasure client UI showing player info',
     route: 'https://github.com/maxdavid/react-treasure-hunt',
+    size: 'small',
+    imageCover: true
+  },
+  {
+    projectTitle: 'gitsnap',
+    description: 'NPM package that snaps a laptop selfie on every git commit.',
+    tags: ['JavaScript', 'npm', 'git', 'Fun'],
+    image: gitsnapDemo,
+    imageAlt: 'Gitsnap illustrative graphic',
+    route: 'https://github.com/maxdavid/gitsnap',
     size: 'small',
     imageCover: true
   },

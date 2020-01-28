@@ -11,6 +11,7 @@ import treasureClientDemo from './treasureClientDemo.png';
 import foodreauDemo from './foodreauDemo.gif';
 import citytempDemo from './citytempDemo.gif';
 import dotfilesDemo from './dotfilesDemo.png';
+import gitsnapDemo from './gitsnapDemo.png';
 
 export {
   testy,
@@ -25,5 +26,6 @@ export {
   treasureClientDemo,
   foodreauDemo,
   citytempDemo,
-  dotfilesDemo
+  dotfilesDemo,
+  gitsnapDemo
 };
