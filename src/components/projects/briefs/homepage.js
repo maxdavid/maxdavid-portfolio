@@ -10,7 +10,8 @@ import {
   webstaurantDemo,
   treasureClientDemo,
   foodreauDemo,
-  citytempDemo
+  citytempDemo,
+  dotfilesDemo
 } from './assets';
 
 export const projects = [
@@ -106,6 +107,17 @@ export const projects = [
     tags: ['Frontend Engineering', 'React', 'JavaScript', 'CS', 'Graph Theory'],
     image: treasureClientDemo,
     imageAlt: 'snippet of the treasure client UI showing player info',
+    route: 'https://github.com/maxdavid/react-treasure-hunt',
+    size: 'small',
+    imageCover: true
+  },
+  {
+    projectTitle: 'Dotfiles',
+    description:
+      'My command line dotfiles, preserved here for posterity and inspiration.',
+    tags: ['Linux', 'zsh', 'CS', 'System Administration'],
+    image: dotfilesDemo,
+    imageAlt: 'Screengrab of neofetch',
     route: 'https://github.com/maxdavid/react-treasure-hunt',
     size: 'small',
     imageCover: true

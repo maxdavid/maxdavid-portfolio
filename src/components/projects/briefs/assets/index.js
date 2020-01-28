@@ -10,6 +10,7 @@ import webstaurantDemo from './webstaurantDemo.gif';
 import treasureClientDemo from './treasureClientDemo.png';
 import foodreauDemo from './foodreauDemo.gif';
 import citytempDemo from './citytempDemo.gif';
+import dotfilesDemo from './dotfilesDemo.png';
 
 export {
   testy,
@@ -23,5 +24,6 @@ export {
   webstaurantDemo,
   treasureClientDemo,
   foodreauDemo,
-  citytempDemo
+  citytempDemo,
+  dotfilesDemo
 };
