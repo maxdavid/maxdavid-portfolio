@@ -15,7 +15,7 @@ export const FunShapes = () => {
         <span />
         <span />
       </OrangeSteps>
-      <OrangeSteps rotation='55deg' top='191%' left='10%' delay='0.3s'>
+      <OrangeSteps rotation='55deg' top='191%' left='9%' delay='0.3s'>
         <span />
         <span />
         <span />
