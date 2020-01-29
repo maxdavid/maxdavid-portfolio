@@ -11,13 +11,13 @@ export const Bio = props => {
       <BioText className='flow'>
         <BioName>Max David</BioName>
         <h4>
-          UX Engineer student approaching design from a technical angle and a
+          UX Engineer approaching design from a technical angle and a
           hospitality mindset.
         </h4>
         <div className='subtitle'>Currently located in San Francisco.</div>
-        <BioContact className='mono'>
+        {/* <BioContact className='mono'>
           <a href='mailto:me@maxdavid.com'>✎ get in contact</a>
-        </BioContact>
+        </BioContact> */}
         <StyledBlockLinksContainer>
           <BlockLink
             href='https://github.com/maxdavid'
@@ -25,9 +25,9 @@ export const Bio = props => {
             description='Some of my Code'
           />
           <BlockLink
-            href='https://www.linkedin.com/in/maxdavid/'
-            title='LinkedIn'
-            description='Connect if you Want'
+            href='mailto:me@maxdavid.com'
+            title='Email me!'
+            description='Shoot me a message'
           />
         </StyledBlockLinksContainer>
       </BioText>
