@@ -8,7 +8,9 @@ import {
   VoluntierOutline,
   ThankYouOutline,
   FoodreauOutline,
-  CityTempOutline
+  CityTempOutline,
+  WhatShrekOutline,
+  WhichWebstaurantOutline
 } from './views';
 
 function App() {
@@ -22,6 +24,12 @@ function App() {
           <Route exact path={'/thank-you'} component={ThankYouOutline} />
           <Route exact path={'/foodreau'} component={FoodreauOutline} />
           <Route exact path={'/citytemp'} component={CityTempOutline} />
+          <Route exact path={'/what-shrek'} component={WhatShrekOutline} />
+          <Route
+            exact
+            path={'/which-webstaurant'}
+            component={WhichWebstaurantOutline}
+          />
         </Switch>
       </ContentContainer>
       {/* <Footer fixed /> */}

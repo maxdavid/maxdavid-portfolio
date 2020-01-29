@@ -41,7 +41,7 @@ export const projects = [
     tags: ['Augmented Reality', 'JavaScript', 'Spark', 'Fun'],
     image: webstaurantDemo,
     imageAlt: "demo of the 'Which Webstaurant?' AR filter",
-    route: 'https://github.com/maxdavid/spark-WhichWebstaurant',
+    route: '/which-webstaurant',
     size: 'small',
     imageCover: true
   },
@@ -63,7 +63,7 @@ export const projects = [
     tags: ['Augmented Reality', 'JavaScript', 'Spark', 'Fun'],
     image: shrekDemo,
     imageAlt: "demo of the 'What Shrek?' AR filter",
-    route: 'https://github.com/maxdavid/spark-WhatShrek',
+    route: '/what-shrek',
     size: 'small',
     imageCover: true
   },
@@ -129,7 +129,7 @@ export const projects = [
     tags: ['Linux', 'zsh', 'CS', 'System Administration'],
     image: dotfilesDemo,
     imageAlt: 'Screengrab of neofetch',
-    route: 'https://github.com/maxdavid/react-treasure-hunt',
+    route: 'https://github.com/maxdavid/dotfiles',
     size: 'small',
     imageCover: true
   }

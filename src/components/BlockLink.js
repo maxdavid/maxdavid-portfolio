@@ -2,11 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 
 export const BlockLink = props => {
+  let disabled = props.disabled ? { disabled: 'disabled' } : {};
   return (
     <StyledBlockLink
       href={props.href}
       title={props.title}
       description={props.description}
+      {...disabled}
       rel='noopener noreferred'
       target='_blank'
     >
@@ -30,7 +32,6 @@ export const StyledBlockLinksContainer = styled.div`
 `;
 
 export const StyledBlockLink = styled.a`
-  cursor: pointer;
   text-decoration: none;
   display: block;
   background-color: ${({ theme }) => theme.surface};
@@ -38,6 +39,9 @@ export const StyledBlockLink = styled.a`
   border-radius: 5px;
   transition: all 0.25s ease;
   position: relative;
+
+  cursor: ${({ disabled }) => (disabled ? 'default' : 'pointer')};
+  opacity: ${({ disabled }) => (disabled ? 0.4 : 1)};
 
   flex-grow: 1;
   display: flex;
@@ -67,8 +71,9 @@ export const StyledBlockLink = styled.a`
 
   &:hover {
     transition: all 0.25s ease;
-    transform: scale(1.05);
-    background-color: ${({ theme }) => theme.yellowAccent};
+    transform: ${({ disabled }) => (disabled ? 'none' : 'scale(1.05)')};
+    background-color: ${({ disabled, theme }) =>
+      disabled ? theme.grayAccent : theme.yellowAccent};
   }
 
   &::after {
